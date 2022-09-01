@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soamndo Numeros</title>
+    <style>
+        main{
+            background-color: black;
+            width: 400px;
+            height:300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+        }
+        .number{
+            border-color: darkgray;
+            margin-bottom: 1rem;
+            height: 1.5rem;
+            text-indent: .2rem;
+
+        }
+        .btn{
+            width: 6rem;
+            height: 2rem;
+            font-size: 1em;
+            background-color: aquamarine;
+            margin-bottom: 2rem;
+            
+        }
+
+        #res{
+            background-color: WHITE;
+            color: black;
+            margin-top: .5rem;
+            width: 7rem;
+            height: 2rem;
+            text-align: center;
+            line-height: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando Valores</h1>
+        <input class="number" type="number" name="txtn1" id="txtn1" placeholder="Digite o primeiro número...">
+        <input class="number" type="number" name="txtn2" id="txtn2" placeholder="Digite o segundo número...">
+        <input id="button" class="btn" type="button" value="SOMAR">
+        <label for="res">A soma dos Numeros é</label>
+        <div id="res"> Resultado</div>
+    </main>
+    <script>
+        let btn = document.querySelector('#button')
+        btn.addEventListener('click', somar)
+        function somar(){ 
+
+            let tn1 = document.querySelector('#txtn1')
+            let tn2 = document.querySelector('#txtn2')
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let s = n1 + n2
+            res.innerHTML = s
+        }
+            </script>
+</body>
+</html>
