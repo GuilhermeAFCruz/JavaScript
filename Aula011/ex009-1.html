@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Qual o seu país de origem?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Confirmar" id="btnconfirma">
+    <div id="text"></div>
+    <script>
+        let txtPais = document.querySelector('#txtpais')
+        let btnConfirma = document.querySelector('#btnconfirma')
+        let text = document.querySelector('#text') 
+        btnConfirma.addEventListener('click', verificar)
+        function verificar(){
+            let pais = txtPais.value
+            if(pais == 'brasil' || pais == 'Brasil'){
+               text.innerHTML = '<p>Você nasceu no Brasil, portanto é <strong>Brasileiro</strong>.</p>'     
+            }
+            else{
+                text.innerHTML = '<p>Você não  nasceu no Brasil, portanto é um <strong>Estrangeiro</strong>.</p>'
+            }
+        }
+    </script>
+</body>
+</html>
