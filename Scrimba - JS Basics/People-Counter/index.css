@@ -1,0 +1,71 @@
+*, *:after, *::before {box-sizing: border-box;}
+
+html {height: 100%;}
+body {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(40deg, rgb(236, 189, 96) 0%, rgb(156, 202, 255) 100%);
+    background-color: #00000031;
+    background-blend-mode: darken;
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.wrapper {
+    background-image: url(station.jpg);
+    width: 90vw;
+    max-width: 600px;
+    height: 90vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 4px black;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+button {
+    border: none;
+    padding-block: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+
+button:active {
+    filter: brightness(70%);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+#increment-btn {
+    background: darkred;
+}
+
+#save-btn {
+    background: darkgreen;
+}
+
+#entries-display {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}

@@ -1,0 +1,64 @@
+*, *:after, *::before {box-sizing: border-box;}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(60deg, rgb(1, 100, 34) 0%, rgb(0, 240, 80) 100%);
+    font-size: 1.25rem;
+}
+.wrapper {
+    width: 80vw;
+    height: 70vh;
+    max-width: 600px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: -5px 5px 10px 2px black;
+    text-align: center;
+    background-image: url(table.png);
+    background-size: cover;
+}
+
+.game-title{
+    font-size: 3rem;
+    color: goldenrod;
+}
+
+p{
+    margin-top: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem
+}
+
+.btn{
+    text-transform: uppercase;
+    width: 200px;
+    color: #016f32;
+    background: goldenrod;
+    padding-block: 5px;
+    font-weight: bold;
+    font-size: inherit;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(120%);
+}
+
+.btn:active{
+    filter: brightness(90%);
+}
+
+
